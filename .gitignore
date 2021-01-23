@@ -8,6 +8,7 @@ __pycache__/
 
 #local
 .idea/
+.ipynb_checkpoints/
 
 # Distribution / packaging
 .Python
