@@ -15,6 +15,7 @@ __pycache__/
 *.run.xml
 *.synctex.gz
 *.toc
+ToDo.md
 
 #local
 .idea/
