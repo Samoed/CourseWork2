@@ -77,14 +77,13 @@
 % ошибка в russian.lbx
 \NewBibliographyString{langjapanese}
 \NewBibliographyString{fromjapanese}
-
 \newcommand{\putbibliography}{
 	\chapter**{Библиографический список}
 	\addcontentsline{toc}{chapter}{Библиографический список}
 
 	\printbibliography[env=gostbibliography,heading=none] %title={Библиографический список},
 }
-
+\addbibresource{library.bib}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Установка основных характеристик текста
 
