@@ -43,7 +43,7 @@
 style=gost-numeric-min,
 language=russian,
 babel=other,
-backend=bibtex,
+backend=biber,
 defernumbers=true,% Нумерация начинается как только встречается группа.
 sorting=none,
 url=false,
