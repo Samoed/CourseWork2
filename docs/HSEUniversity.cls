@@ -81,7 +81,8 @@ maxnames=100
 	\chapter**{Библиографический список}
 	\addcontentsline{toc}{chapter}{Библиографический список}
 	
-	\printbibliography[env=gostbibliography,heading=none] %title={Библиографический список},
+%	\printbibliography[env=gostbibliography,heading=none] %title={Библиографический список},
+	\printbibliography[heading=none] %title={Библиографический список},
 }
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
