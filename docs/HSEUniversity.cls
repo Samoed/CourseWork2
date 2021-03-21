@@ -33,7 +33,6 @@
 \RequirePackage{amsfonts}
 \RequirePackage{amssymb}
 
-
 \RequirePackage[linktocpage=true,plainpages=false,pdfpagelabels=false]{hyperref}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

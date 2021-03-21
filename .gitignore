@@ -15,7 +15,12 @@ __pycache__/
 *.run.xml
 *.synctex.gz
 *.toc
+
+
 ToDo.md
+data/embeddings.zip
+*.dvi
+*.out.ps
 
 #local
 .idea/
