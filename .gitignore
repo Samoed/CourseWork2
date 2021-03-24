@@ -16,9 +16,12 @@ __pycache__/
 *.synctex.gz
 *.toc
 
-
+#data
 ToDo.md
 data/embeddings.zip
+data/embeddingsShort.zip
+data/embeddingsPickle/*
+
 *.dvi
 *.out.ps
 
