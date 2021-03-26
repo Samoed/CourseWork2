@@ -30,7 +30,7 @@ class Ui_MainWindow(object):
         self.comboBox = QtWidgets.QComboBox(self.centralwidget)
         self.comboBox.setGeometry(QtCore.QRect(590, 50, 171, 25))
         self.comboBox.setObjectName("comboBox")
-        self.comboBox.addItems(["Сумма","MAE","MSE","RMSE"])
+        self.comboBox.addItems(["Среднее","MAE","MSE","RMSE"])
         
         self.label_2 = QtWidgets.QLabel(self.centralwidget)
         self.label_2.setGeometry(QtCore.QRect(560, 30, 231, 17))
@@ -79,10 +79,10 @@ class Ui_MainWindow(object):
             for i in range(len(embText)):
                 for arrRow in range(len(arr)):
                     for j in range(768):
-                        sum += embText[i][j] - arr[arrRow][j]
-                        mae += abs(embText[i][j] - arr[arrRow][j])
+                        sum  += embText[i][j] - arr[arrRow][j]
+                        mae  += abs(embText[i][j] - arr[arrRow][j])
                         rmae += abs(embText[i][j] - arr[arrRow][j]) ** 0.5
-                        mse += (embText[i][j] - arr[arrRow][j]) ** 2
+                        mse  += (embText[i][j] - arr[arrRow][j]) ** 2
                         rmse += ((embText[i][j] - arr[arrRow][j]) ** 2) ** 0.5
             error[sum] = name
         return error
