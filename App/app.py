@@ -30,11 +30,20 @@ class Ui_MainWindow(object):
         self.comboBox = QtWidgets.QComboBox(self.centralwidget)
         self.comboBox.setGeometry(QtCore.QRect(590, 50, 171, 25))
         self.comboBox.setObjectName("comboBox")
-        self.comboBox.addItems(["Среднее","MAE","MSE","RMSE"])
+        self.comboBox.addItems(["Эвклидово расстояние","Манхэтонновское расстояние"])
         
         self.label_2 = QtWidgets.QLabel(self.centralwidget)
-        self.label_2.setGeometry(QtCore.QRect(560, 30, 231, 17))
+        self.label_2.setGeometry(QtCore.QRect(590, 30, 231, 17))
         self.label_2.setObjectName("label_2")
+        
+        self.comboBox2 = QtWidgets.QComboBox(self.centralwidget)
+        self.comboBox2.setGeometry(QtCore.QRect(590, 110, 171, 25))
+        self.comboBox2.setObjectName("comboBox2")
+        self.comboBox2.addItems(["Все со всеми","Минимальное расстояние","Минимальное расстояние все предложения","Минимальное расстояние с повторениями","Усреднение"])
+        
+        self.label_3 = QtWidgets.QLabel(self.centralwidget)
+        self.label_3.setGeometry(QtCore.QRect(590, 90, 275, 17))
+        self.label_3.setObjectName("label_3")
 
         self.label = QtWidgets.QLabel(self.centralwidget)
         self.label.setGeometry(QtCore.QRect(10, 30, 141, 17))
@@ -62,6 +71,7 @@ class Ui_MainWindow(object):
         self.readyButton.setText(_translate("MainWindow", "Готово"))
         self.label.setText(_translate("MainWindow", "Введите текст:"))
         self.label_2.setText(_translate("MainWindow", "Выберите функцию расстояния"))
+        self.label_3.setText(_translate("MainWindow", "Выберите функцию подбора"))
 
     def ComputeError(self, embText, embProf):
         print("start compute")
